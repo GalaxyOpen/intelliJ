@@ -47,6 +47,7 @@ public class HomeController {
     public String reqParam2(@RequestParam("name") String name, @RequestParam("age") int age) {
         System.out.println("name = +" + name + "age = " + age);
         return "index";
+
     }
 }
 
