@@ -43,10 +43,10 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/req-param2") // reg-param, Controller, GetMapping : annotation 분류
+    @GetMapping("/req-param2") //  reg-param, Controller, GetMapping : annotation 분류
     public String reqParam2(@RequestParam("name") String name, @RequestParam("age") int age) {
         System.out.println("name = +" + name + "age = " + age);
-        return "index";
+        return "Home";
 
     }
 }
